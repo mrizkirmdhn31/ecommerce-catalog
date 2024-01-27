@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+}
+
+:root {
+    --dark-sapphire: #002772;
+    --pink: #fde2ff;
+    --black: #1e1e1e;
+    --byzantium: #720060;
+    --pale-aqua: #d6e6ff;
+    --shadow-gray: #3f3f3f;
+    --gainsboro: #dcdcdc;
+    --white: #ffffff;
+}
+
+.container{
+    background-color: var(--pink);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    align-items: center;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 70%;
+    height: 60vh;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 5px;
+}
+
+.image-product {
+    width: 100%;
+    height: 100%;
+}
+
+.detail-top{
+    width: 100%;
+    height: 25%;
+}
+
+.detail-bottom{
+    width: 100%;
+    height: 70%;
+}
