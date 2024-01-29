@@ -1,5 +1,6 @@
 <template>
     <div class="container">
+        <div class="loader"></div>
         <div v-if="isLoading" class="card">
             <div class="product-container">
                 <div class="default-thumbnail"></div>
@@ -52,7 +53,7 @@
                         </div>
                         <div class="bottom">
                             <span :class="product.data.category === 'men\'s clothing' ? 'font-navy' : 'font-magenta'" class="price">${{ product.data.price }}</span>
-                            <div class="button-action">
+                            <div class="button-action ">
                                 <button type="button" :class="product.data.category === 'men\'s clothing' ? 'bg-navy' : 'bg-magenta'" class="button-buy">Buy Now</button>
                                 <button type="button" @click="getProduct()" :class="product.data.category === 'men\'s clothing' ? 'border-navy font-navy' : 'border-magenta font-magenta'" class="button-next">Next Product</button>
                             </div>
